@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML &lt;iframe&gt; Embedding Example</title>
+</head>
+<body>
+    <h1>Embedding Content and Maps with <code>&lt;iframe&gt;</code></h1>
+    
+    <h2>1. Embed a Google Map</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0867443536264!2d-122.41941538468158!3d37.7749292797594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c9b450c51%3A0x6e8c0d9750fddc7c!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1715688888888"
+        width="400"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Map Showing San Francisco"
+    ></iframe>
+
+    <h2>2. Embed a YouTube Video</h2>
+    <iframe
+        width="400"
+        height="225"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+    ></iframe>
+
+    <h2>3. Embed Another Web Page (Wikipedia)</h2>
+    <iframe
+        src="https://en.wikipedia.org/wiki/HTML"
+        width="400"
+        height="300"
+        title="Wikipedia HTML Article"
+    >
+        Sorry, your browser does not support iframes.
+    </iframe>
+
+    <p>
+        <strong>Note:</strong> Some websites may block embedding by <code>&lt;iframe&gt;</code> for security reasons (using X-Frame-Options). The above examples should generally work, but if a site doesn't load, try another that allows embedding.
+    </p>
+</body>
+</html>

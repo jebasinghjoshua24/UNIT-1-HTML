@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" href="./assets/images/Time-capsule-logo.png" type="image/x-icon">
+    </head>
+    <body class="homepage">
+        <header class="header">
+            <nav>
+                <a href="login.html">Log Out</a>
+            </nav>
+        </header>
+        <main class="homepage-main">
+            <section class="create-capsule">
+                <h2>Create your capsule</h2>
+                <form>
+                    <fieldset>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Enter the title">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" name="description" placeholder="Description (Optional)">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter the message" rows="10" cols="40" required></textarea>
+                        <label for="unlock-date">Unlock Date & Time</label>
+                        <input type="datetime-local" name="unlock-date" id="unlock-date" required>
+                        <button type="submit">Submit</button>       
+                    </fieldset>
+                </form>
+            </section>
+            <section class="capsules" hidden>
+                <h2>Your Capsules</h2>
+                <div id="capsule-space">
+                    <p>Capsules will be shown here</p>
+                </div>
+            </section>
+            <section class="opened" hidden>
+                <h2>Opened Capsules</h2>
+                <div>
+                    <p>Opened capsules will be shown here</p>
+                </div>
+            </section>
+        </main>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

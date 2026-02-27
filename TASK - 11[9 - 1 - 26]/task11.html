@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Semantic Layout & Accessibility Example</title>
+</head>
+<body>
+    <header>
+        <h1>My Awesome Blog</h1>
+        <p>Your daily dose of awesome articles.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section aria-labelledby="news-heading">
+            <h2 id="news-heading">Latest News</h2>
+            <article aria-labelledby="article1-title">
+                <h3 id="article1-title">Welcome to HTML5 Semantics</h3>
+                <p>
+                    Using semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> helps search engines and assistive technologies understand your content structure.
+                </p>
+            </article>
+            <article aria-labelledby="article2-title">
+                <h3 id="article2-title">Accessibility Basics</h3>
+                <ul>
+                    <li>Use descriptive headings with <code>id</code> attributes for accessible labels.</li>
+                    <li>Apply <code>aria-label</code>, <code>aria-labelledby</code>, and <code>aria-current</code> where appropriate for better screen reader support.</li>
+                    <li>Make navigation clear and consistent.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Awesome Blog. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>

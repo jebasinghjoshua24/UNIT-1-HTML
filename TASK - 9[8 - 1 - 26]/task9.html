@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements Example</title>
+</head>
+<body>
+    <h1>HTML Form Elements Demo</h1>
+    <form>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+        <br><br>
+
+        <label for="color">Choose a color:</label>
+        <select id="color" name="color">
+            <option value="">--Please choose an option--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        <br><br>
+
+        <p>Choose your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobbies" value="sports">
+        <label for="hobby2">Sports</label>
+        <input type="checkbox" id="hobby3" name="hobbies" value="music">
+        <label for="hobby3">Music</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

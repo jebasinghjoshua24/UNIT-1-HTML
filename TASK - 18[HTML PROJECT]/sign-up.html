@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Time Capsule - Sign-Up</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" href="./assets/images/Time-capsule-logo.png" type="image/x-icon">
+    </head>
+    <body class="auth-page">
+        <header class="header">
+            <nav>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+        <main class="auth-main">
+            <div class="auth-container">
+                <fieldset>
+                    <form class="sign-up-form">
+                        <h3>Sign-Up</h3>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your Username" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                        <p id="error"></p>
+                        <button id="Sign-Up-Btn" type="submit">Sign-Up</button>
+                        <div class="auth-links">
+                            <p>Already have an account?</p>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+        <script src="/js/script.js"></script>6
+    </body>
+</html>

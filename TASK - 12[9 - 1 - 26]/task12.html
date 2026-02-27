@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block vs Inline Elements & Layout Techniques Example</title>
+</head>
+<body>
+    <h1>Block vs Inline Elements and Layout Examples</h1>
+    <section>
+        <h2>Block Elements</h2>
+        <p>
+            Block elements (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>) start on a new line, take up the full width available, and stack vertically.
+        </p>
+        <div>
+            This is a &lt;div&gt; (block element)
+        </div>
+        <div>
+            Another &lt;div&gt; (block element)
+        </div>
+    </section>
+    <section>
+        <h2>Inline Elements</h2>
+        <p>
+            Inline elements (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>) do <strong>not</strong> start on a new line and only take up as much width as necessary.
+        </p>
+        <p>
+            This is a 
+            <span>&lt;span&gt; (inline)</span>
+            within a sentence,
+            <strong>&lt;strong&gt; (inline)</strong>
+            and more text follows 
+            <a href="#inline">&lt;a&gt; (inline)</a>.
+        </p>
+    </section>
+    <section>
+        <h2>Inline-block Element</h2>
+        <p>
+            <code>display: inline-block;</code> allows elements to flow inline, but have block-like width and height.<br>
+            (Can't be demonstrated without CSS, but shown for explanation.)
+        </p>
+        <span>1st inline-block</span>
+        <span>2nd inline-block</span>
+        <span>3rd inline-block</span>
+    </section>
+    <section>
+        <h2>Layout Techniques</h2>
+        <h3>Float-based layout</h3>
+        <div>Float Box 1</div>
+        <div>Float Box 2</div>
+        <div>Float Box 3</div>
+        <h3>Inline-block technique (flex-like)</h3>
+        <span>Item 1</span>
+        <span>Item 2</span>
+        <span>Item 3</span>
+        <p>(Note: Without CSS, these layout effects cannot be visually represented, but the HTML structure shown here is what would be used.)</p>
+    </section>
+    <hr>
+    <h2>Summary</h2>
+    <ul>
+        <li><strong>Block elements</strong> break to a new line and expand to container width.</li>
+        <li><strong>Inline elements</strong> flow inside a line, do not break the line.</li>
+        <li><strong>Inline-block</strong> combines both behaviors—inline flow with block sizing (requires CSS to demonstrate).</li>
+        <li>Simple layouts can be created with <strong>float</strong> and <strong>inline-block</strong> in HTML (requires CSS to visualize).</li>
+    </ul>
+</body>
+</html>

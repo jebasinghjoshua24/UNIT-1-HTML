@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table: Rowspan, Colspan, Accessibility, and Styling</title>
+</head>
+<body>
+    <h1>HTML Table Example: Rowspan, Colspan, Accessibility, and Styling</h1>
+    <p>This table demonstrates the use of <b>rowspan</b>, <b>colspan</b>, semantic markup for accessibility, and basic table styling using HTML only.</p>
+    
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:70%;" aria-labelledby="tcaption">
+        <caption id="tcaption"><b>Employee Work Schedule</b></caption>
+        <thead>
+            <tr>
+                <th scope="col">Employee</th>
+                <th scope="col">Department</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">Alice</th>
+                <td rowspan="2">Marketing</td>
+                <td colspan="2">Conference</td>
+                <td>Office</td>
+            </tr>
+            <tr>
+                <td>Remote</td>
+                <td colspan="2">Office</td>
+            </tr>
+            <tr>
+                <th scope="row">Bob</th>
+                <td>IT</td>
+                <td rowspan="2">Office</td>
+                <td>Remote</td>
+                <td>Training</td>
+            </tr>
+            <tr>
+                <th scope="row">Carol</th>
+                <td>HR</td>
+                <td colspan="2">Office</td>
+            </tr>
+            <tr>
+                <th scope="row">Dave</th>
+                <td colspan="4" align="left">On Leave</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5" align="center">
+                    Schedule subject to change. Please check back for updates.
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2 id="access-tip">Accessibility Tips</h2>
+    <ul>
+        <li>Use <code>&lt;th scope="col"&gt;</code> and <code>&lt;th scope="row"&gt;</code> for headers to help screen readers.</li>
+        <li>Add a <code>&lt;caption&gt;</code> for a table description.</li>
+        <li>Use <code>aria-labelledby</code> to link the table and caption.</li>
+    </ul>
+</body>
+</html>
